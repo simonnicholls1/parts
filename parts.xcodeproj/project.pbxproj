@@ -13,6 +13,10 @@
 		F4DC02D11C37303600170007 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4DC02D01C37303600170007 /* Images.xcassets */; };
 		F4DC02D41C37303600170007 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4DC02D21C37303600170007 /* LaunchScreen.xib */; };
 		F4DC02E01C37303700170007 /* partsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DC02DF1C37303700170007 /* partsTests.swift */; };
+		F4DC02EF1C3733CC00170007 /* View1.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DC02ED1C3733CC00170007 /* View1.swift */; };
+		F4DC02F01C3733CC00170007 /* View1.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4DC02EE1C3733CC00170007 /* View1.xib */; };
+		F4DC02F31C37376800170007 /* View2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DC02F11C37376800170007 /* View2.swift */; };
+		F4DC02F41C37376800170007 /* View2.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4DC02F21C37376800170007 /* View2.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,10 @@
 		F4DC02D91C37303700170007 /* partsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = partsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4DC02DE1C37303700170007 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4DC02DF1C37303700170007 /* partsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = partsTests.swift; sourceTree = "<group>"; };
+		F4DC02ED1C3733CC00170007 /* View1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = View1.swift; path = ../View1.swift; sourceTree = "<group>"; };
+		F4DC02EE1C3733CC00170007 /* View1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = View1.xib; path = ../View1.xib; sourceTree = "<group>"; };
+		F4DC02F11C37376800170007 /* View2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View2.swift; sourceTree = "<group>"; };
+		F4DC02F21C37376800170007 /* View2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View2.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +85,13 @@
 		F4DC02C61C37303600170007 /* parts */ = {
 			isa = PBXGroup;
 			children = (
+				F4DC02ED1C3733CC00170007 /* View1.swift */,
+				F4DC02EE1C3733CC00170007 /* View1.xib */,
 				F4DC02C91C37303600170007 /* AppDelegate.swift */,
 				F4DC02CB1C37303600170007 /* ViewController.swift */,
 				F4DC02CD1C37303600170007 /* Main.storyboard */,
+				F4DC02F11C37376800170007 /* View2.swift */,
+				F4DC02F21C37376800170007 /* View2.xib */,
 				F4DC02D01C37303600170007 /* Images.xcassets */,
 				F4DC02D21C37303600170007 /* LaunchScreen.xib */,
 				F4DC02C71C37303600170007 /* Supporting Files */,
@@ -194,6 +206,8 @@
 			files = (
 				F4DC02CF1C37303600170007 /* Main.storyboard in Resources */,
 				F4DC02D41C37303600170007 /* LaunchScreen.xib in Resources */,
+				F4DC02F01C3733CC00170007 /* View1.xib in Resources */,
+				F4DC02F41C37376800170007 /* View2.xib in Resources */,
 				F4DC02D11C37303600170007 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,7 +227,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4DC02CC1C37303600170007 /* ViewController.swift in Sources */,
+				F4DC02EF1C3733CC00170007 /* View1.swift in Sources */,
 				F4DC02CA1C37303600170007 /* AppDelegate.swift in Sources */,
+				F4DC02F31C37376800170007 /* View2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +357,7 @@
 				INFOPLIST_FILE = parts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -351,6 +368,7 @@
 				INFOPLIST_FILE = parts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
