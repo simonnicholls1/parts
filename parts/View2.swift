@@ -46,11 +46,17 @@ class View2: UIViewController, UIImagePickerControllerDelegate, UINavigationCont
         
         captureSession?.sessionPreset = AVCaptureSessionPreset1920x1080
         
-        var backCamera = AVCaptureDevice.defaultDeviceWithMediaType(AVMediaTypeVideo)
+        let backCamera = AVCaptureDevice.defaultDeviceWithMediaType(AVMediaTypeVideo)
         
         var error : NSError?
         
-        var input = AVCaptureDeviceInput(device: backCamera, error: &error)
+        var input: AVCaptureDeviceInput!
+        do {
+            input = try AVCaptureDeviceInput(device: backCamera)
+        } catch let error1 as NSError {
+            error = error1
+            input = nil
+        }
         
         if (error == nil && captureSession?.canAddInput(input) != nil)
         {
@@ -70,7 +76,7 @@ class View2: UIViewController, UIImagePickerControllerDelegate, UINavigationCont
             
             previewLayer?.connection.videoOrientation = AVCaptureVideoOrientation.Portrait
             
-            cameraView.layer.addSublayer(previewLayer)
+            cameraView.layer.addSublayer(previewLayer!)
             
             captureSession?.startRunning()
             

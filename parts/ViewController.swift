@@ -16,14 +16,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var V1 :View1 = View1(nibName: "View1", bundle: nil)
+        let V1 :View1 = View1(nibName: "View1", bundle: nil)
         self.addChildViewController(V1)
         self.scrollview.addSubview(V1.view)
         
         V1.didMoveToParentViewController(self)
         
         
-        var V2 :View2 = View2(nibName: "View2", bundle: nil)
+        let V2 :View2 = View2(nibName: "View2", bundle: nil)
         self.addChildViewController(V2)
         self.scrollview.addSubview(V2.view)
         
